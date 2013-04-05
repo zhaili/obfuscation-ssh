@@ -167,6 +167,10 @@ typedef struct {
 	char   *trusted_user_ca_keys;
 	char   *authorized_principals_file;
 
+ 	int obfuscated_ports[MAX_PORTS];
+ 	u_int num_obfuscated_ports;
+ 	char *obfuscate_keyword;
+
 	char   *version_addendum;	/* Appended to SSH banner */
 }       ServerOptions;
 
